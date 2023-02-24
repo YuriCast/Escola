@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //Ex1
+
+        let individuo ={
+            nome: 'Yuri Castilho',
+            idade: 17,
+            cadastrado: true
+        }
+        console.log(individuo.nome)
+        console.log(individuo.idade)
+        console.log(individuo.cadastrado)
+    
+
+        //Ex2
+
+        let pessoa ={
+            nome: 'Yasmin Castilho',
+
+            mostraNome: function(){
+                console.log(pessoa.nome)
+            }
+        }
+
+        pessoa.mostraNome()
+
+        
+        //Ex3
+
+        let pessoa1 ={
+            nome: 'Yuri Castilho',
+            idade: 15,
+        }
+        let pessoa2={
+            nome: 'Enzo Castilho',
+            idade: 17,
+        }
+
+        if(pessoa1.idade > pessoa2.idade){
+            console.log(pessoa1.nome)
+        }
+        else{
+            console.log(pessoa2.nome)
+        }
+
+
+        //Ex4
+
+        let funcionario1 ={
+            nome: 'Maria',
+            salario: 2500,
+        }
+
+        let funcionario2 ={
+            nome: 'João',
+            salario: 2000,
+        }
+
+        console.log((funcionario1.salario + funcionario2.salario) / 2)
+
+
+        //Ex5
+
+        let retangulo ={
+            largura: 5,
+            altura: 3,
+        }
+
+        console.log('Area: ' + retangulo.largura*retangulo.altura)
+        console.log('Perímetro: ' + 2* (retangulo.largura*retangulo.altura))
+        console.log('Diagonal: ' + Math.sqrt(retangulo.largura*retangulo.largura+retangulo.altura*retangulo.altura))
+
+
+    </script>
+
+</body>
+</html>
