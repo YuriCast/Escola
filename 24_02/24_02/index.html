@@ -81,6 +81,30 @@
         console.log('Perímetro: ' + 2* (retangulo.largura*retangulo.altura))
         console.log('Diagonal: ' + Math.sqrt(retangulo.largura*retangulo.largura+retangulo.altura*retangulo.altura))
 
+          //Mesmo resultado | Método diferentes
+
+        let retangulo2 = {
+            largura: 3.0,
+            altura: 4.0,
+
+            area: function(){
+                let a = this.largura*this.altura
+                console.log('Área: '+a)
+            },
+            perimetro: function(){
+                let p = 2*(this.largura+this.altura)
+                console.log('Perímetro: ' + p)
+            },
+            diagonal: function(){
+                let d = Math.sqrt(this.largura*this.largura + this.altura*this.altura)
+                console.log('Diagonal: ' + d)
+            }
+
+        }
+
+        retangulo2.area()
+        retangulo2.perimetro()
+        retangulo2.diagonal()
 
     </script>
 
